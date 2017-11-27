@@ -6,7 +6,7 @@
  * Time: 20:51
  */
 
-namespace BankCard\Model;
+namespace Card\Model;
 
 
 use Core\Model\BookChapterInterface;
