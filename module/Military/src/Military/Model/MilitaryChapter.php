@@ -10,13 +10,9 @@ namespace Military\Model;
 
 
 use Core\Model\BookChapter;
-use Core\Model\ClientAccountInterface;
 use Core\Model\File;
-use Core\Model\FileCellInterface;
 use Core\Model\FileInterface;
 use Core\Model\Model;
-use Core\Model\PersonInterface;
-use Core\Model\PersonPassportInterface;
 
 class MilitaryChapter extends BookChapter implements MilitaryChapterInterface {
 
