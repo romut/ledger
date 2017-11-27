@@ -9,6 +9,10 @@ return array(
     'modules' => array(
         'Application',
         'Core',
+        'Acquiring',
+        'Card',
+        'Client',
+        'Military',
     ),
     'module_listener_options' => array(
         'module_paths' => array(
