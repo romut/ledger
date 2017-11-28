@@ -11,6 +11,6 @@ namespace Card\Model;
 
 use Core\Model\BookChapterInterface;
 
-interface BankCardChapterInterface extends BookChapterInterface {
+interface CardChapterInterface extends BookChapterInterface {
 
 } 

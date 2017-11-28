@@ -12,7 +12,7 @@ namespace Card\Model;
 use Core\Model\BookChapter;
 use Core\Model\FileInterface;
 
-class BankCardChapter extends BookChapter implements BankCardChapterInterface {
+class CardChapter extends BookChapter implements CardChapterInterface {
 
     public function checkFile(FileInterface $file)
     {

@@ -1,5 +1,5 @@
 <?php
-namespace BankCard;
+namespace Card;
 
 class Module
 {
