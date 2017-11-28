@@ -11,9 +11,20 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Application\Service\LedgerServiceInterface;
 
 class IndexController extends AbstractActionController
 {
+    /**
+     * @var LedgerServiceInterface $service
+     */
+    private $service;
+    
+    public function __construct(LedgerServiceInterface $service)
+    {
+        $this->service = $service;
+    }
+    
     public function indexAction()
     {
         return new ViewModel();

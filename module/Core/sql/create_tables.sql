@@ -1,6 +1,5 @@
 DROP TABLE `ledger`.`registry_entries`;
 DROP TABLE `ledger`.`registries`;
-DROP TABLE `ledger`.`military`;
 DROP TABLE `ledger`.`person_passports`;
 DROP TABLE `ledger`.`persons`;
 DROP TABLE `ledger`.`companies`;

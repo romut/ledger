@@ -12,4 +12,8 @@
  */
 
 return array(
+    'db' => array(
+        'username' => 'root',
+        'password' => 'rn3KM1xa',
+    ),
 );

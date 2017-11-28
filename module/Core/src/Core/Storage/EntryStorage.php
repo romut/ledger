@@ -14,6 +14,7 @@ use Core\Model\BookInterface;
 use Core\Model\ClientTypeInterface;
 use Core\Model\EntryInterface;
 use Core\Model\ModelInterface;
+use Zend\Db\Adapter\AdapterInterface;
 use Zend\Db\Adapter\Driver\ResultInterface;
 use Zend\Db\Sql\Select;
 use Zend\Db\Sql\Sql;
@@ -35,6 +36,14 @@ class EntryStorage extends ModelStorage implements EntryStorageInterface {
      */
     private $checkedEntries = array();
 
+    /**
+     * @param AdapterInterface $dbAdapter
+     */
+    public function __construct(AdapterInterface $dbAdapter)
+    {
+        parent::__construct($dbAdapter);
+    }
+    
     /**
      * @return BookInterface
      */
