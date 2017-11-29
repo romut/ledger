@@ -127,7 +127,7 @@ class Book extends Entry implements BookInterface {
      */
     public function open(UserInterface $user)
     {
-        print __CLASS__ . '->' . __FUNCTION__ . " STARTING\n";
+        //print __CLASS__ . '->' . __FUNCTION__ . " STARTING\n";
 
         if (is_null($this->getStorage())) throw new StorageIsNullException();
         if (!$this->checkRight(self::READER_LEVEL)) throw new NoPermissionException();
@@ -150,7 +150,7 @@ class Book extends Entry implements BookInterface {
         $this->getStorage()->resetCheckedEntries();
         $this->user = $user;
 
-        print __CLASS__ . '->' . __FUNCTION__ . " FINISHED.\n";
+        //print __CLASS__ . '->' . __FUNCTION__ . " FINISHED.\n";
 
         return $this;
     }

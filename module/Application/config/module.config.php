@@ -56,19 +56,18 @@ return array(
     ),
     'service_manager' => array(
         'invokables' => array(
-            
         ),
+        
         'abstract_factories' => array(
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
             'Zend\Log\LoggerAbstractServiceFactory',
         ),
+        
         'factories' => array(
             'translator' => 'Zend\Mvc\Service\TranslatorServiceFactory',
             'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
 
             'Application\Service\LedgerServiceInterface' => 'Application\Factory\LedgerServiceFactory',
-            
-            'Core\Storage\EntryStorageInterface' => 'Core\Factory\EntryStorageFactory',
         ),
     ),
     'translator' => array(

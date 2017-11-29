@@ -43,7 +43,7 @@ INSERT INTO `ledger`.`models` (`model_class_name`) VALUES
 ;
 
 INSERT INTO `ledger`.`entries` (`model_id`)
-SELECT `model_id` FROM `ledger`.`models`WHERE `model_class_name` IN
+SELECT `model_id` FROM `ledger`.`models` WHERE `model_class_name` IN
 (
 'Core\\Model\\Folder',
 'Core\\Model\\User',
@@ -73,7 +73,7 @@ SELECT `entry_id`, 'admins' FROM `ledger`.`entries` `e`, `ledger`.`models` `m`
 WHERE `m`.`model_class_name` = 'Core\\Model\\Group' AND `m`.`model_id` = `e`.`model_id`;
 
 INSERT INTO `ledger`.`books` (`book_id`,`book_name`,`data_path`) 
-SELECT `entry_id`, 'First Book', 'd:/prj/php/zf2/Ledger/data' FROM `ledger`.`entries` `e`, `ledger`.`models` `m`
+SELECT `entry_id`, 'Main Book', 'd:/prj/php/zf2/Ledger/data' FROM `ledger`.`entries` `e`, `ledger`.`models` `m`
 WHERE `m`.`model_class_name` = 'Core\\Model\\Book' AND `m`.`model_id` = `e`.`model_id`;
 
 INSERT INTO `ledger`.`book_chapters` (`book_chapter_id`,`book_chapter_name`,`class`) 
